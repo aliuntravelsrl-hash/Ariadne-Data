@@ -74,7 +74,7 @@ La mayoría de las queries van directo a PostgreSQL sin LLM. Solo interpretació
 
 | Componente | URL/Path | Propósito |
 |-----------|----------|-----------|
-| Supabase | `qxlmnsnxwlmfhspjehbh.supabase.co` | Fuente de verdad |
+| Supabase | `oyihiyivdhfxpyiwnmqk.supabase.co` | Fuente de verdad (compartida con el resto del enjambre; los 7 RPCs analytics viven aqui) |
 | MCP Server | `https://n8n-atlas-sales-mcp.xaruuo.easypanel.host/mcp` | Tools RPC |
 | n8n | `https://n8n-n8n.xaruuo.easypanel.host` | Orquestación workflows |
 | Telegram Bot | `@Hermes_ALDO_bot` | Entrega de reportes |
