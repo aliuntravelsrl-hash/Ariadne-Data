@@ -1,32 +1,44 @@
-# 🔍 Swarm Agency Agents – Ariadne Data
+# Ariadne Data
+> Dominio: **Analytics · KPIs · Inteligencia Operativa · Self-Assessment**
 
-Ariadne es la agente analista del enjambre. Su misión es transformar cada interacción, clic y conversación en inteligencia accionable para que Hermes Marketing y el departamento de ventas tomen decisiones basadas en datos, no en intuiciones.
+## Identidad
+**Rol en el swarm:** recommender
+**Propósito:** Memoria ejecutiva del COS. Genera inteligencia operativa, reportes semanales y recomendaciones de prioridad para el Director.
 
-## 📦 Documentación de la agente
+## Dependencias
+| Tipo | Fuente |
+|------|--------|
+| Constitución | [atlas-cos-v1](https://github.com/aliuntravelsrl-hash/atlas-cos-v1) |
+| Protocolos activos | TPP-v1 · KBP-v1 · POI-v1 · SPI-v1 · ONP-v1 |
+| MCP / Herramientas | Supabase · OpenRouter |
+| Knowledge Manifest | `atlas-cableados/knowledge/manifests/ariadne-data.yaml` |
 
-| Documento | Descripción |
-|-----------|-------------|
-| soul.md | Personalidad, tono y misión de la agente |
-| skill.md | Capacidades analíticas que puede ejecutar |
-| department.md | Departamento de Data & Analytics y sus OKRs |
-| routing_logic.md | Cuándo se activa Ariadne y cómo recibe tareas |
-| tools.md | Herramientas de consulta, modelado y reporting |
-| architecture.md | Arquitectura de la agente dentro del enjambre |
-| ariadne_agent.md | Ficha técnica oficial para RRHH IA |
-| cross_repo_notice.md | Aviso de existencia para los otros pilares |
-| rrhh_ia_onboarding.md | Documento de onboarding para RRHH IA |
+## Fuente Canónica
+Toda doctrina, protocolo y especificación vive en **atlas-cos-v1**.
+Este repositorio **implementa** — nunca duplica doctrina.
 
-## 🔗 Integración en el sistema existente
+```
+atlas-cos-v1 (Constitución)
+      │
+      ▼
+Ariadne Data
+(Implementación de dominio)
+```
 
-- **PostgreSQL**: fuente de verdad para todos los datos de leads, eventos, ventas y viajes
-- **CRM**: obtiene perfiles de cliente cerrados y datos de fidelización
-- **Hermes Marketing**: recibe segmentos, puntuaciones y alertas; devuelve datos de campaña
-- **Ventas (QA)**: consume reportes de conversión y atribución; envía resultados de llamadas
-- **Hermes Commercial**: consume métricas de conversión por lead; recibe auditorías de QA
+## Sub-agentes
+escuchador_crm.py (daemon CRM)
 
-Ariadne es el pegamento que convierte el ruido operativo en una máquina de mejora continua.
+## Repos relacionados
+- `atlas-cos-v1` — fuente canónica del COS
+- `atlas-cableados` — rehidratación y knowledge manifests
+- `aliun-rrhh-v2` — perfiles RRHH-IA y roles
+
+## Estado
+`CONVERGENCIA EN PROGRESO` — REPO-MOD-001 Fase 2
+
+## Últimos cambios
+Ver commits del repositorio.
 
 ---
-
-Versión: 1.0  
-Autor: Swarm Atlas Travel Solutions
+*Aliun Travel SRL · Director Aldo Hilario · ATLAS-TECH*
+*COS-v3.5 · [atlas-cos-v1](https://github.com/aliuntravelsrl-hash/atlas-cos-v1)*
