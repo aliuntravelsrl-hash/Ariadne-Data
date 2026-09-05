@@ -1,44 +1,30 @@
 # Ariadne Data
-> Dominio: **Analytics · KPIs · Inteligencia Operativa · Self-Assessment**
+> Departamento: **Data & Strategic Intelligence (Líder Analítica & SSOT)**
 
-## Identidad
-**Rol en el swarm:** recommender
-**Propósito:** Memoria ejecutiva del COS. Genera inteligencia operativa, reportes semanales y recomendaciones de prioridad para el Director.
-
-## Dependencias
-| Tipo | Fuente |
-|------|--------|
-| Constitución | [atlas-cos-v1](https://github.com/aliuntravelsrl-hash/atlas-cos-v1) |
-| Protocolos activos | TPP-v1 · KBP-v1 · POI-v1 · SPI-v1 · ONP-v1 |
-| MCP / Herramientas | Supabase · OpenRouter |
-| Knowledge Manifest | `atlas-cableados/knowledge/manifests/ariadne-data.yaml` |
-
-## Fuente Canónica
-Toda doctrina, protocolo y especificación vive en **atlas-cos-v1**.
-Este repositorio **implementa** — nunca duplica doctrina.
-
-```
-atlas-cos-v1 (Constitución)
-      │
-      ▼
-Ariadne Data
-(Implementación de dominio)
-```
-
-## Sub-agentes
-escuchador_crm.py (daemon CRM)
-
-## Repos relacionados
-- `atlas-cos-v1` — fuente canónica del COS
-- `atlas-cableados` — rehidratación y knowledge manifests
-- `aliun-rrhh-v2` — perfiles RRHH-IA y roles
-
-## Estado
-`CONVERGENCIA EN PROGRESO` — REPO-MOD-001 Fase 2
-
-## Últimos cambios
-Ver commits del repositorio.
+## 1. Identidad y Rol en el Swarm
+* **Nombre:** Ariadne Data
+* **Rol:** Analytics & Financial Intelligence Leader
+* **Departamento:** Data & Analytics (Aliun Travel SRL)
+* **Reporta a:** Director General Aldo Hilario
+* **Subordinado a su cargo:** Atlas Intel (`23f6189f-ffec-41f9-987b-f4b41e79b0f9`)
+* **Modelo:** `nvidia/nemotron-3-nano-omni-30b-a3b:free`
+* **Panel de Control:** `https://atlas.aliuntravelsrl.com/ariadne`
 
 ---
-*Aliun Travel SRL · Director Aldo Hilario · ATLAS-TECH*
+
+## 2. Responsabilidades Principales
+1. **Control del Embudo (Funnel):** Auditoría en tiempo real de leads, conversiones y tiempos de cierre.
+2. **Cálculo de Márgenes Reales:** Conversión de alertas de tarifas XML de proveedores en planes de ganancia neta.
+3. **Detección de Leads Estancados (+7d):** Alerta y rescate de oportunidades comerciales en riesgo de abandono.
+4. **Supervisión de Atlas Intel:** Conducción de la inteligencia externa hacia resultados financieros internos.
+
+---
+
+## 3. Repositorios y Fuentes Canónicas
+- `atlas-cos-v1` — Constitución del COS
+- `atlas-curator-office` — Actas y especificaciones TO-BE
+- `aliun-rrhh-v2` — Fichas de personal y contratos
+
+---
+*Aliun Travel SRL · Director Aldo Hilario · ATLAS-TECH*  
 *COS-v3.5 · [atlas-cos-v1](https://github.com/aliuntravelsrl-hash/atlas-cos-v1)*
